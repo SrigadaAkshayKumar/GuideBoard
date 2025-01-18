@@ -8,7 +8,7 @@ const Header = () => {
       </div>
       <div className="div2">
         <a href="/">Home</a>
-        <a href="https://akshayportfolio.onrender.com/">Contact</a>
+        <a href="https://www.linkedin.com/in/akshaykumarsrigada">Contact</a>
       </div>
     </header>
   );

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "name": "blog1",
+    "thumbnail": "/images/blog1.jpg",
+    "title": "Road To Become a Data Analyst",
+    "Publish": "2024-05-24",
+    "description": "Road to Become a Data Analyst, Overview In this, we will guide you through the journey of becoming a data analyst. We’ll cover the essential skills you need to acquire, the tools you’ll be using, and the steps to start your career as a Data Analyst. Introduction to the Role of Data Analyst A data analyst plays a critical role in today’s data-driven world by transforming raw data..."
+  },
+  {
+    "id": "2",
+    "name": "blog2",
+    "thumbnail": "/images/blog2.png",
+    "title": "Pandas — For Beginners",
+    "Publish": "2024-06-10",
+    "description": "Pandas — For Beginners Pandas, Introduction In today’s data-driven world, data analysis plays a crucial role in transforming large amount of raw data into understandable visualization. This process enables organizations to make informed decisions. By analyzing data, businesses can gain a competitive edge, better understand customer behavior, and personalize their offerings. Pyth..."
+  },
+  {
+    "id": "3",
+    "name": "blog1",
+    "thumbnail": "/images/blog3.png",
+    "title": "How to Use Different Charts Effectively in Data Visualization",
+    "Publish": "2024-06-10",
+    "description": "Introduction to Data Visualization, Data Visualization Techniques. What is Data Visualization? Data visualization is the pictorial representation of information and data. It transforms raw, complex data into visual formats such as charts, graphs, and maps, making it easier to analyze, and communicate insights. Example: Imagine your class took a math test, and the teacher wants to..."
+  }
+]
