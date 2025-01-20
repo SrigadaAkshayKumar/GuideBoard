@@ -6,6 +6,7 @@ import blogs from "./blogs.json"; // Import your metadata JSON file
 const Singleblog = () => {
   const { id } = useParams(); // `id` here is the blog title
   const [content, setContent] = useState("");
+  const [showScrollButton, setShowScrollButton] = useState(false);
 
   useEffect(() => {
     const fetchBlog = async () => {
@@ -31,6 +32,26 @@ const Singleblog = () => {
     fetchBlog();
     window.scrollTo(0, 0);
   }, [id]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowScrollButton(true);
+      } else {
+        setShowScrollButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <div>
@@ -81,6 +102,12 @@ const Singleblog = () => {
           ))}
         </div>
       </div>
+      {/* Scroll to Top Button */}
+      {showScrollButton && (
+        <button className="scroll-to-top" onClick={scrollToTop}>
+          ↑
+        </button>
+      )}
     </div>
   );
 };
