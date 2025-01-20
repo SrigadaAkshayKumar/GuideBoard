@@ -84,9 +84,11 @@ const Singleblog = () => {
         <div className="suggested-blogs-list">
           {blogs.slice(0, 3).map((blog) => (
             <div key={blog.id} className="suggested-blog-item">
-              <div className="img1">
-                <img src={blog.thumbnail} alt={blog.title} />
-              </div>
+              <Link to={`/BlogPage/${blog.title}`}>
+                <div className="img1">
+                  <img src={blog.thumbnail} alt={blog.title} />
+                </div>
+              </Link>
               <div>
                 <h2>{blog.title}</h2>
                 <p>{blog.description}</p>
